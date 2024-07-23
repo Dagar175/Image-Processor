@@ -1,0 +1,177 @@
+/* Reset some default styles */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Form and file input styles */
+form {
+    margin-bottom: 30px;
+}
+
+.file-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #333;
+    transition: background-color 0.3s;
+}
+
+.file-input input[type="file"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.file-input span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 15px;
+    background-color: #444;
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.file-input span:hover {
+    background-color: #555;
+    transform: scale(1.02);
+}
+
+/* Button styles */
+button.btn {
+    background: linear-gradient(135deg, #bb86fc, #a15bfc);
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+button.btn:hover {
+    background: linear-gradient(135deg, #a15bfc, #bb86fc);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* Status checker and download section styles */
+.status-checker, .download-section {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #bb86fc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #2c2c2c;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #444;
+    width: 60%; /* Could be more or less, depending on screen size */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.close {
+    color: #e0e0e0;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bb86fc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Status result styling */
+#status-result {
+    padding: 15px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    color: #e0e0e0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+

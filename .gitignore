@@ -1,0 +1,91 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Dependency directories
+bower_components/
+
+# Build output
+dist/
+build/
+
+# Image processing output
+processed/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Database files
+*.sqlite
+*.sqlite3
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# Linux specific files
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package distribution
+*.tgz
+*.tar.gz
+
+# OS-specific files
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Optional, if you use any code formatters or linters
+*.eslintcache
+*.prettierignore
+
+# Specific to project tools
+*.pid
+*.seed
+
+# Webpack cache
+.cache/
+
+# Image processing temporary files
+*.webp
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# IDE-specific folders (optional)
+.vscode/
+*.code-workspace
+
+# Build artifacts
+*.tgz
+*.tar.gz
+
+# Miscellaneous
+*.db
+*.lock
