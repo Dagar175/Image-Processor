@@ -93,7 +93,7 @@ agenda.define('process-sheet', async (job) => {
 
 
 async function initiateWebhook(requestId) {
-    const baseUrl = `${req.protocol}://${req.get('host')}`;
+    const baseUrl = window.location.protocol + "//" + window.location.hostname;
     const webhookUrl = `${baseUrl}/api/webhook`;
 
     try {
