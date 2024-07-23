@@ -1,6 +1,7 @@
 // agenda.js
 const Agenda = require('agenda');
 const dotenv = require('dotenv');
+const os = require('os');
 const { v4: uuidv4 } = require('uuid');
 const Image = require('./models/Image');
 const { compressImage, removeFile, downloadImage } = require('./services/imageService');
@@ -93,7 +94,8 @@ agenda.define('process-sheet', async (job) => {
 
 
 async function initiateWebhook(requestId) {
-    const baseUrl = window.location.protocol + "//" + window.location.hostname;
+    const hostname = os.hostname();
+    const baseUrl =  + "https://" + hostname;
     const webhookUrl = `${baseUrl}/api/webhook`;
 
     try {
