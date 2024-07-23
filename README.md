@@ -38,3 +38,12 @@ curl -X GET https://image-processor-bxtc.onrender.com/api/sheet/download/<sheetI
 
 
 
+## Information
+The system is hosted on render. Free tier
+
+In this I have used mongoDB as database Free tier
+
+For queues I have used Agenda as more suitable with mongodb
+
+Every validation are there in system.
+
