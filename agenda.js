@@ -94,8 +94,7 @@ agenda.define('process-sheet', async (job) => {
 
 
 async function initiateWebhook(requestId) {
-    const hostname = os.hostname();
-    const baseUrl =  + "https://" + hostname;
+    const baseUrl =  "https://image-processor-bxtc.onrender.com";
     const webhookUrl = `${baseUrl}/api/webhook`;
 
     try {
