@@ -93,7 +93,8 @@ agenda.define('process-sheet', async (job) => {
 
 
 async function initiateWebhook(requestId) {
-    const webhookUrl = 'http://localhost:3000/api/webhook'; // Replace with your actual webhook URL
+    const baseUrl = `${req.protocol}://${req.get('host')}`;
+    const webhookUrl = `${baseUrl}/api/webhook`;
 
     try {
         const response = await axios.post(webhookUrl, { requestId });
